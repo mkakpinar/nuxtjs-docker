@@ -17,5 +17,6 @@ services:
       - "443:443"
     volumes:
       - ./nginx:/etc/nginx/conf.d
+      - /etc/ssl:/etc/ssl #path to  certificates folder
     depends_on:
       - nuxt
